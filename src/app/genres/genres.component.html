@@ -1,0 +1,11 @@
+<div class="genres">
+  <div class="genre" *ngFor="let genre of arrGenres" class="movie">
+    <div>
+
+      <h3 (click)="selectGenre(genre)" class="title" [ngStyle]="{
+        color: genre.color}">{{genre.name}} </h3>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<h1>{{item.original_title}}</h1>
+<div class="current-movie-wrapper">
+  <img src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="movie">
+  <div class="description-wrapper">
+    <p class="overview">{{item.overview}}</p>
+    <p class="year"><span>year:</span> {{item.release_date.substring(0, [4])}}</p>
+    <p class="time"><span>runtime:</span> {{item.runtime}} minutes</p>
+
+
+    <div class="rate">
+      <p>rate:</p>
+      <fa-icon class="icon-start" [icon]="faStar"></fa-icon>
+      <div>{{item.vote_average}}</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <h2>Trailer</h2>
+<div class="video">
+  <iframe src={{item.video}} width="1170" height="660" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+</div> -->

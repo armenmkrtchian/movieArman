@@ -1,0 +1,6 @@
+<h1>Movies</h1>
+<div class="app">
+  <app-genres (selectedGenre)="handleSeletedGenre($event)" class="genres-wrapper">
+  </app-genres>
+  <app-movie-search class="movie-wrapper" [genreId]="genreId"></app-movie-search>
+</div>

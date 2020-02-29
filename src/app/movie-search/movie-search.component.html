@@ -1,0 +1,13 @@
+<div class="movies">
+  <div (click)="onSelect(movie)" *ngFor="let movie of movies " class="movie">
+    <div>
+      <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="movie">
+      <h3 class="title">{{movie.title}}</h3>
+      <p class="year">{{movie.release_date.substring(0, [4])}}</p>
+      <div class="rate">
+        <fa-icon class="icon-start" [icon]="faStar"></fa-icon>
+        <div>{{movie.vote_average}}</div>
+      </div>
+    </div>
+  </div>
+</div>
